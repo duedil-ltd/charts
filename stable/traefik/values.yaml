@@ -435,3 +435,12 @@ tracing:
 #   forwarding:
 #     dialTimeout: 30s
 #     responseHeaderTimeout: 0s
+
+## Lifecycle
+##
+# lifecycle:
+#   ## duration to keep accepting requests until starting graceful termination
+#   requestAcceptGraceTimeout: 0s
+#   ## duration active requests have to finish before Traefik terminates
+#   graceTimeOut: 10s
+

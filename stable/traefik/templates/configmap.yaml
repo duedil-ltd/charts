@@ -382,3 +382,12 @@ data:
       {{- end }}
     {{- end }}
     {{- end }}
+    {{- if .Values.lifecycle }}
+    [lifecycle]
+      {{- if .Values.lifecycle.requestAcceptGraceTimeout }}
+      requestAcceptGraceTimeout = {{ .Values.lifecycle.requestAcceptGraceTimeout }}
+      {{- end }}
+      {{- if .Values.lifecycle.graceTimeOut }}
+      graceTimeout = {{ .Values.lifecycle.graceTimeOut }}
+      {{- end }}
+    {{- end }}
